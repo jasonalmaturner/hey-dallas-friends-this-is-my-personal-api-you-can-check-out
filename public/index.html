@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>my api</title>
+</head>
+<body ng-app="myApi" ng-controller="mainCtrl">
+
+  <div>{{name}}</div>
+  <br>
+  <form ng-submit="addHobbie()">
+    <input type="text" ng-model="newHobbie" placeholder="add hobbie">
+  </form>
+  <div ng-repeat="hobbie in hobbies">{{hobbie}}</div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+  <script src="service.js"></script>
+</body>
+</html>
